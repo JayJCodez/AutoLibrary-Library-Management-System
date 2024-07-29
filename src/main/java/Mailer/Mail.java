@@ -28,9 +28,9 @@ public class Mail {
         return bais;
     }
 
-    protected String fromUser = "jesseokuji123@gmail.com";
+    protected String fromUser = "";
 
-    protected String userpw = "nkrz jqxv hiuh vqgl";
+    protected String userpw = "";
 
     protected String emailHost = "smtp.gmail.com";
 
