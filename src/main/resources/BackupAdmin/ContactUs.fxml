@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="622.0" styleClass="contactUsBackground" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handlers.ContactUsHandler">
+   <children>
+      <AnchorPane layoutX="34.0" layoutY="3.0" prefHeight="505.0" prefWidth="555.0" styleClass="contactUsRightPane" stylesheets="@../style.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+         <children>
+            <TextField layoutX="32.0" layoutY="65.0" promptText="Full Name" styleClass="textfieldsMain" stylesheets="@../style.css" />
+            <TextField layoutX="347.0" layoutY="65.0" promptText="Contact" styleClass="textfieldsMain" stylesheets="@../style.css" />
+            <Label layoutX="347.0" layoutY="143.0" prefHeight="25.0" prefWidth="72.0" text="Based In" />
+            <TextField layoutX="32.0" layoutY="174.0" promptText="Email" styleClass="textfieldsMain" stylesheets="@../style.css" />
+            <TextArea fx:id="messageArea" layoutX="32.0" layoutY="263.0" prefHeight="140.0" prefWidth="279.0" promptText="Message" styleClass="textAreaContactUs" stylesheets="@../style.css" />
+            <VBox layoutX="347.0" layoutY="194.0" prefHeight="132.0" prefWidth="178.0" styleClass="contactAddress" stylesheets="@../style.css">
+               <children>
+                  <Label prefHeight="44.0" prefWidth="178.0" styleClass="addressTXT" stylesheets="@../style.css" text="39 Manor Court" />
+                  <Label prefHeight="44.0" prefWidth="178.0" styleClass="addressTXT" stylesheets="@../style.css" text="Newbiggin-By-The-Sea" />
+                  <Label prefHeight="44.0" prefWidth="178.0" styleClass="addressTXT" stylesheets="@../style.css" text="NE64 6HF" />
+               </children>
+            </VBox>
+            <Label layoutX="32.0" layoutY="428.0" prefHeight="44.0" prefWidth="146.0" styleClass="contactButton" stylesheets="@../style.css" text="Contact Us" />
+            <HBox layoutX="346.0" layoutY="358.0" prefHeight="45.0" prefWidth="189.0" spacing="15.0">
+               <children>
+                  <ImageView fitHeight="42.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/5296516_tweet_twitter_twitter%20logo_icon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="43.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/5296765_camera_instagram_instagram%20logo_icon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="45.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/5365678_fb_facebook_facebook%20logo_icon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

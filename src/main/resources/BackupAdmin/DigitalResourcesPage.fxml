@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane fx:id="view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="493.0" prefWidth="1105.0" styleClass="DigitalResourcesPane" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handlers.DigitalResourcesPageHandler">
+   <children>
+      <VBox alignment="CENTER" layoutX="289.0" layoutY="14.0" prefHeight="399.0" prefWidth="553.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="289.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <BorderPane maxHeight="342.0" maxWidth="554.0" prefHeight="342.0" prefWidth="554.0" VBox.vgrow="NEVER">
+               <center>
+                  <MediaView fx:id="mediaView" fitHeight="342.0" fitWidth="554.0" onMouseClicked="#stopMedia" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+            <HBox alignment="CENTER" prefHeight="58.0" prefWidth="584.0" spacing="10.0">
+               <children>
+                  <Button fx:id="Playbtn" mnemonicParsing="false" onAction="#Play" text="Play" />
+                  <Button fx:id="SelectFile" mnemonicParsing="false" onAction="#Pausebtn" text="Pause" />
+                  <Label fx:id="durationlabel" text="Duration 00/00" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="14.0" layoutY="42.0" prefHeight="371.0" prefWidth="227.0" spacing="10.0" styleClass="MenuPlayerBox" stylesheets="@../style.css" AnchorPane.leftAnchor="14.0">
+         <children>
+            <Label id="Advert1" fx:id="Advert1" alignment="CENTER" onMouseClicked="#playAd1" prefHeight="60.0" prefWidth="227.0" styleClass="digitResourceAdvertLabel" stylesheets="@../style.css" text="New Resources" />
+            <Label fx:id="Advert2" alignment="CENTER" onMouseClicked="#playAd2" prefHeight="60.0" prefWidth="227.0" styleClass="digitResourceAdvertLabel" stylesheets="@../style.css" text="Sports" />
+            <Label fx:id="Advert3" alignment="CENTER" prefHeight="60.0" prefWidth="227.0" styleClass="digitResourceAdvertLabel" stylesheets="@../style.css" text="Technology" />
+            <Label fx:id="Advert4" alignment="CENTER" prefHeight="60.0" prefWidth="227.0" styleClass="digitResourceAdvertLabel" stylesheets="@../style.css" text="News" />
+            <Label fx:id="Advert5" alignment="CENTER" prefHeight="60.0" prefWidth="227.0" styleClass="digitResourceAdvertLabel" stylesheets="@../style.css" text="Video5" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

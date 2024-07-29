@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="247.0" styleClass="anchorResCard" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handlers.ResourceSavedCardHandler">
+   <children>
+      <VBox alignment="CENTER" prefHeight="280.0" prefWidth="247.0" spacing="10.0" styleClass="vboxContainsRes" stylesheets="@../style.css">
+         <children>
+            <ImageView fx:id="delete_book_icon" fitHeight="25.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-close-window-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img" fitHeight="119.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="resource_name" prefHeight="42.0" prefWidth="280.0" styleClass="resourcecardLabel" stylesheets="@../style.css" text="ResourceName" />
+            <Label fx:id="resource_type" prefHeight="42.0" prefWidth="334.0" styleClass="resourcecardLabel" stylesheets="@../style.css" text="ResourceType" />
+            <HBox prefHeight="64.0" prefWidth="332.0" spacing="15.0">
+               <children>
+                  <Label fx:id="viewBTN" prefHeight="64.0" prefWidth="174.0" styleClass="ResCardButtons" stylesheets="@../style.css" text="View" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

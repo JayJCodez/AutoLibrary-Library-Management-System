@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="MainBackgroundHome" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handlers.HomeDashboardHandler">
+   <children>
+      <Label alignment="CENTER" layoutX="201.0" layoutY="39.0" prefHeight="41.0" prefWidth="341.0" styleClass="HomeDashboardLabel" stylesheets="@../style.css" text="Home Dashboard" AnchorPane.leftAnchor="201.0" AnchorPane.rightAnchor="201.0" AnchorPane.topAnchor="39.0" />
+      <HBox layoutY="216.0" prefHeight="151.0" prefWidth="743.0" spacing="50.0" AnchorPane.bottomAnchor="385.0" AnchorPane.topAnchor="216.0">
+         <children>
+            <VBox fx:id="BooksAvailable" alignment="CENTER" prefHeight="150.0" prefWidth="233.0" spacing="50.0" styleClass="LiveData" stylesheets="@../style.css">
+               <children>
+                  <Label alignment="CENTER" styleClass="LiveDataTopLabel" stylesheets="@../style.css" text="Books Available in Library">
+                     <font>
+                        <Font name="Apple SD Gothic Neo ExtraBold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="BooksAvailableNo" alignment="CENTER" prefHeight="42.0" prefWidth="134.0" styleClass="LiveDashboardLabel" stylesheets="@../style.css" text="Label">
+                     <font>
+                        <Font name="Apple Symbols" size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="UsersRegistered" alignment="CENTER" prefHeight="150.0" prefWidth="233.0" spacing="50.0" styleClass="LiveData" stylesheets="@../style.css">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="143.0" styleClass="LiveDataTopLabel" stylesheets="@../style.css" text="Users  Registered">
+                     <font>
+                        <Font name="Apple SD Gothic Neo ExtraBold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="UsersRegisteredNo" alignment="CENTER" prefHeight="42.0" prefWidth="134.0" styleClass="LiveDashboardLabel" stylesheets="@../style.css" text="Label">
+                     <font>
+                        <Font name="Apple Symbols" size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="BooksReturned" alignment="CENTER" prefHeight="150.0" prefWidth="233.0" spacing="50.0" styleClass="LiveData" stylesheets="@../style.css">
+               <children>
+                  <Label styleClass="LiveDataTopLabel" stylesheets="@../style.css" text="Books to be returned">
+                     <font>
+                        <Font name="Apple SD Gothic Neo ExtraBold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="BooksReturnedNo" alignment="CENTER" prefHeight="42.0" prefWidth="134.0" styleClass="LiveDashboardLabel" stylesheets="@../style.css" text="Label">
+                     <font>
+                        <Font name="Apple Symbols" size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

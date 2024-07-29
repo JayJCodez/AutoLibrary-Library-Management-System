@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="991.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handlers.ApproveDenyRequestHandler">
+   <children>
+      <Label alignment="CENTER" layoutX="364.0" prefHeight="55.0" prefWidth="264.0" styleClass="BookkepingHeadingLabels" stylesheets="@../style.css" text="Approve/Deny Requests" AnchorPane.bottomAnchor="509.0" AnchorPane.leftAnchor="364.0" AnchorPane.rightAnchor="363.0" AnchorPane.topAnchor="0.0" />
+      <ScrollPane hbarPolicy="ALWAYS" layoutX="26.0" layoutY="60.0" prefHeight="473.0" prefWidth="941.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="60.0">
+        <content>
+            <GridPane fx:id="grid" prefHeight="47.0" prefWidth="0.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

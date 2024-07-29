@@ -1,0 +1,1347 @@
+@font-face {
+    font-family: 'Madimi One';
+    src: url('/BackupAdmin/Fonts/MadimiOne_Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/BackupAdmin/Fonts/Poppins-ExtraLightItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/BackupAdmin/Fonts/Roboto-BoldItalic.ttf');
+}
+
+
+/* Login Page panel left-side*/
+.LeftSidePane{
+
+    -fx-background-color: #407088;
+    
+}
+
+/*Register Transition Label*/
+
+#registerTRANS{
+
+    -fx-background-color: #bbe4e9;
+    -fx-background-radius: 30px;
+
+    
+}
+
+
+/*Heading Labels for left side Pane*/
+
+#LeftSideLabels{
+
+
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 13px;
+    -fx-background-color: #407088;
+
+
+
+}
+
+
+
+
+
+/*Heading Labels for right side Pane*/
+
+#HeadingLabels{
+
+
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 40px;
+
+}
+
+/*Textfield Labels Login Page*/
+#textfieldLabels{
+
+    -fx-font-family: 'Madimi One';
+    
+
+}
+
+#registerTRANS:hover{
+
+    -fx-background-color: #5585b5;
+    -fx-cursor: hand;
+
+}
+
+/* Login Page panel right-side*/
+.RightSidePane{
+
+    -fx-background-color: #5585b5;
+
+}
+
+
+/*buttons on right panel page*/
+
+#rightPanelButtons{
+
+
+    -fx-background-color: #113f67;
+    -fx-background-radius: 30px;
+    -fx-text-fill: #e7eaf6;
+    -fx-alignment: center;
+    
+
+}
+
+#rightPanelButtons:hover{
+
+    -fx-background-color: #233142;
+    -fx-cursor: hand;
+
+}
+
+/*Main component for homepage*/
+.HomeMainPagePanel{
+
+}
+
+/*Main Background for Anchorpane*/
+
+.MainBackgroundHome{
+
+
+
+    -fx-background-color: #5dacbd;
+
+
+}
+
+/*Left Side Menu Main Homepage*/
+
+.LeftMenuBar{
+
+-fx-border-color: #FFFFFF;
+-fx-border-radius: 30px;
+-fx-border-style: solid;
+-fx-background-radius: 30px;
+-fx-background-color: #24527a;
+
+}
+
+.LeftMenuBarButton{
+    -fx-text-fill: #b1bbca;
+    
+}
+
+.LeftMenuBarButton:hover{
+
+    -fx-background-color:#345e9b;
+    -fx-cursor: hand;
+    -fx-background-radius: 30px;
+    
+}
+
+
+
+
+.LeftMenuBarButtonLast:hover{
+
+    -fx-background-color:#345e9b;
+    -fx-background-radius: 0px 0px 30px 30px;
+    -fx-cursor: hand;   
+
+}
+
+/*Logo top menu Homepage*/
+
+.LogoContainer{
+
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 30px;
+    -fx-border-style: solid;
+    -fx-background-radius: 15px;
+    
+
+}
+
+/*Live Database box update (Home Dashboard)*/
+
+.LiveData{
+
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 30px;
+    -fx-border-style: solid;
+    -fx-background-radius: 30px;
+    -fx-background-color:#0092ca;
+
+
+}
+
+/*Live Database update labels (Home Dashboard)*/
+
+.LiveDashboardLabel{
+
+    -fx-background-color: #24527a;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 30px;
+    -fx-border-style: solid;
+    -fx-background-radius: 30px;
+    -fx-text-fill: #5dacbd;
+    -fx-font-family: 'Poppins';
+    
+
+
+}
+
+/*Live Data Top Labelling*/
+
+.LiveDataTopLabel{
+
+    -fx-font-size: 18px;
+    -fx-font-family: 'Madimi One';
+    -fx-alignment: center;
+    -fx-text-fill: white;
+
+}
+
+/*Home Dashboard Heading Label for both admin and non-admin*/
+
+.HomeDashboardLabel{
+
+    -fx-font-size: 30px;
+    -fx-font-family: 'Roboto';
+    -fx-font-weight: 700;
+    -fx-alignment: center;
+    -fx-text-fill: #24527a;
+
+}
+
+.SectionHeadingLabel{
+
+    -fx-font-size: 20px;
+    -fx-font-family: 'Roboto';
+    -fx-font-weight: 700;
+    -fx-alignment: center;
+    -fx-text-fill: #24527a;
+
+}
+
+
+/*Top Menu Bar Top*/
+
+.TopBarMain{
+
+    -fx-background-color: #24527a;
+    -fx-padding: 0px 0px 10px 10px;
+    
+}
+
+/*Frame for Book keeping (Main)*/
+
+.BookKeepingMain{
+
+    /* -fx-background-color: #5dacbd; */
+   
+}
+
+/*Book keeping Display Anchorpane*/
+
+.BookkeepingDisplay{
+
+    -fx-background-color: #24527a;
+    -fx-background-radius: 30px;
+    -fx-text-fill: #5dacbd;
+    -fx-font-family: 'Poppins';
+
+}
+
+/*Bookkeeping TextField Labels*/
+#bookkeepingTxtLabel{
+
+    -fx-font-size: 13px;
+    -fx-text-fill: #5dacbd;
+    -fx-font-family: 'Madimi One';
+    /* -fx-font-weight: 400; */
+
+}
+
+/*Bookkeeping TextField Labels*/
+#TextfieldLabels{
+
+    -fx-font-size: 13px;
+    -fx-text-fill: #24527a;
+    -fx-font-family: 'Madimi One';
+    /* -fx-font-weight: 400; */
+
+}
+
+/*Heading labels for bookkeeping multi-page display*/
+
+.BookkepingHeadingLabels{
+
+    -fx-font-size: 30px;
+    -fx-font-family: 'Roboto';
+    -fx-font-weight: 700;
+    -fx-text-fill: #5dacbd;
+
+}
+
+/*Bookkepping Left Main Menn Labels*/
+
+.BookeepingLeftMenuLabels{
+
+    -fx-background-color:  #AFEEEE;
+    -fx-background-radius: 30px;
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #24527a;
+
+
+}
+
+/*Book keeping main header*/
+
+.BookkepingHeadingMain{
+
+    -fx-font-size: 30px;
+    -fx-font-family: 'Roboto';
+    -fx-text-fill: #24527a;
+    -fx-font-weight: 700;
+
+}
+
+.BookeepingLeftMenuLabels:hover{
+
+    -fx-background-color:  #24527a;
+    -fx-cursor: hand;
+    -fx-text-fill: #AFEEEE;
+
+}
+
+/*Book keeping dashboard write-up*/
+
+.BookkeepingSectionDescription{
+
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #AFEEEE;
+    -fx-font-size: 25px;
+
+
+}
+
+/*Digital Resources Main Anchor Pane*/
+
+.DigitalResourcesPane{
+
+    -fx-background-color:#5dacbd;
+
+}
+
+/*Menu VBOX for left-side Digital Resources*/
+
+.MenuPlayerBox{
+
+    
+    -fx-background-color:#5dacbd;
+
+}
+
+/*Labels for different Adverts Digital Resources*/
+
+.digitResourceAdvertLabel{
+
+    -fx-background-color: #24527a;  
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+    -fx-text-fill: #A5D7E8;
+
+}
+
+.digitResourceAdvertLabel:hover{
+
+    -fx-background-color: #535e71;  
+    -fx-cursor: hand;
+
+}
+
+/*Upload New Resources Button*/
+
+.DigitalResTopLeftBTN{
+
+    -fx-background-color: #24527a;
+    
+    
+}
+
+.DigitalResTopLeftBTN:hover{
+
+    -fx-background-color: #292e36;
+    -fx-cursor: hand;
+
+}
+
+.exploreBTN{
+
+    -fx-background-color: #24527a;
+}
+
+.exploreBTN:hover{
+
+    -fx-background-color: #292e36;
+    -fx-cursor: hand;
+
+}
+
+/*Admin download resources button (Label)*/
+
+.downlaodButtonsResource{
+
+
+    -fx-background-color: #24527a;
+    -fx-text-fill: #A5D7E8;
+
+}
+
+.downlaodButtonsResource:hover{
+
+    -fx-cursor: hand;
+    -fx-background-color: #292e36;
+
+}
+
+
+.PreviewLabel{
+
+   
+    -fx-background-color: #24527a;
+    -fx-text-fill: #A5D7E8;
+}
+
+
+
+.numberLabels{
+
+
+    -fx-background-color: #19376D;
+    -fx-text-fill: white;
+    -fx-background-radius: 20px;
+    -fx-font-family: "Poppins";
+    -fx-padding: 3px;
+}
+
+.numberLabels:hover{
+
+    -fx-background-color: #021425;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+
+}
+
+/*Users FXML Hompage Top Menu Bar*/
+
+.TopMenuLabels{
+
+
+    -fx-background-color: #535e71;  
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+    -fx-text-fill: #5dacbd;
+    -fx-font-family: 'Poppins';
+    -fx-alignment: center;
+
+}
+
+.TopMenuLabels:hover{
+
+    -fx-cursor: hand;
+    -fx-background-color: #19376D;
+
+
+}
+
+/*This is the label showing the users balance*/
+
+.balanceAmount{
+
+    -fx-background-color: #19376D;  
+    -fx-background-radius: 0px 0px 10px 10px;
+    -fx-text-fill: #5dacbd;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 17px;
+    -fx-border-radius: 0px 0px 10px 10px;
+    -fx-border-width: 0px 3px 3px 3px;
+    -fx-border-color: white;
+
+
+}
+
+/*Logout Button*/
+
+.LogoutButton{
+
+    -fx-border-style: none;
+    -fx-border-radius: 30px;
+
+}
+
+/*Logout button for user GUI*/
+.user_logoutBTN{
+
+
+    -fx-background-color: #535e71;  
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-text-fill: #5dacbd;
+    -fx-font-family: 'Poppins';  
+
+}
+
+
+.user_logoutBTN:hover{
+
+    -fx-background-color: #9c2015; 
+    -fx-text-fill: #c8d3d5; 
+    -fx-cursor: hand;
+
+}
+
+/*Balance label text and Welcome message*/
+#balanceLabel{
+
+
+    -fx-background-color: #535e71;  
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-text-fill: #5dacbd;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 14px;
+
+}
+
+/*User Welcome message*/
+
+#WelcomeMessage{
+
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-background-color:#5dacbd;
+    -fx-text-fill:#24527a;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 17px;
+    -fx-alignment: center;
+
+
+}
+
+/*Settings top menu bar*/
+
+.AdminsetttingsTopMenu{
+
+    -fx-background-color: #233142;
+    -fx-text-fill: #5dacbd;
+    -fx-font-family: 'Roboto';
+    -fx-font-weight: 700;
+    -fx-alignment: center;
+
+}
+
+
+.AdminsetttingsTopMenu:hover{
+
+    -fx-border-image-insets: 0px 0px 5px 5px;
+    -fx-border-color: #d7e1e3;
+    -fx-cursor: hand;
+    -fx-border-width: 0px 0px 5px 5px;
+}
+
+/*Personal details main AnchorPane*/
+
+.personalDetailsMain{
+
+
+    -fx-background-color: #24527a;
+    -fx-background-radius: 30px;
+    -fx-text-fill: #5dacbd;
+    -fx-font-family: 'Poppins';
+
+}
+
+
+
+#updateDetailsBTN{
+
+    -fx-background-color:  #AFEEEE;
+    -fx-background-radius: 30px;
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #24527a;
+    -fx-alignment: center;
+
+}
+
+#updateDetailsBTN:hover{
+
+    -fx-background-color:  #098941;
+    -fx-cursor: hand;
+    -fx-text-fill: #ddede4;
+    
+}
+
+/*Personal Details delete account button (label) */
+
+#deleteAccountBTN{
+
+    -fx-background-color:  #AFEEEE;
+    -fx-background-radius: 30px;
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #24527a;
+    -fx-alignment: center;
+
+}
+
+#deleteAccountBTN:hover{
+
+    -fx-background-color:  #b62910;
+    -fx-cursor: hand;
+    -fx-text-fill: #daefef;
+
+}
+
+.PersonalDetailsTxtLabels{
+
+    -fx-text-fill: #5dacbd;
+    -fx-font-family: 'Poppins';
+
+}
+
+/*Admin View Books Page Book Cards*/
+
+.TopBookCards{
+
+    -fx-background-color:#5dacbd;
+    -fx-background-radius: 30px;
+    -fx-spacing: 0px;
+}
+
+/*Background for scrollpanel top in view books page*/
+
+.scrollPaneBooksTop{
+
+
+    -fx-background-color: #24527a;
+
+}
+
+/* .gridpaneViewBooks{
+
+    
+    -fx-background-color: #5dacbd;
+    
+} */
+
+/*View Books page Book Frame Pane*/
+
+.bookCardBottom{
+
+    -fx-padding: 5px;
+    -fx-background-color: #24527a;
+    -fx-border-width: 5px 5px 5px 5px;
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+}
+
+/*Book Frme Labels for bottom section*/
+
+#bookLabel{
+
+    -fx-text-fill: #082e47;
+    -fx-font-family: 'Poppins';
+    -fx-background-radius: 30px;
+    -fx-background-color: #a5cfef;
+    -fx-font-weight: bold;
+    -fx-padding: 5px;
+    -fx-font-size: 10px;
+
+
+}
+
+/*choose file button in new book page (ADMIN)*/
+
+.chooseFileBTN{
+
+    -fx-background-color:  #AFEEEE;
+    -fx-background-radius: 30px;
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #24527a;
+    -fx-alignment: center;
+
+}
+
+.chooseFileBTN:hover{
+
+    -fx-background-color:  #098941;
+    -fx-cursor: hand;
+    -fx-text-fill: #ddede4;    
+
+}
+
+/*View Button Label in view books bottom section*/
+
+.viewBTN{
+
+    -fx-background-color:  #AFEEEE;
+    -fx-background-radius: 30px;
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #24527a;
+    -fx-alignment: center;
+    -fx-border-width: 0px 5px 0px 5px;
+
+}
+
+.viewBTN:hover{
+
+    -fx-background-color:  #098941;
+    -fx-cursor: hand;
+    -fx-text-fill: #ddede4;  
+
+}
+
+/*Book Detail labels */
+
+.bookDetailsLabels{
+
+    -fx-background-color:  #AFEEEE;
+    -fx-background-radius: 5px;
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #24527a;
+    -fx-alignment: center;
+    -fx-font-weight: 700;
+    -fx-font-size: 25px;
+
+}
+
+/*Background for book detail main pane*/
+
+.bookDetailsPane{
+
+    -fx-padding: 5px;
+    -fx-background-color: #24527a;
+    -fx-border-width: 5px 5px 5px 5px;
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+    
+
+}
+
+/*Labels displaying the actual data in book details*/
+
+.bookdatatxt{
+
+
+    -fx-alignment: center;
+    -fx-background-color: #0a3153;
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #a7ccf0;
+
+}
+
+.resourcecardLabel{
+
+    -fx-alignment: center;
+    -fx-text-fill: #a7ccf0;
+    -fx-background-color: #03172b;
+    -fx-background-radius: 30px;
+    
+
+}
+
+.anchorResCard{
+
+    -fx-alignment: center;
+    -fx-background-color: #0a3153;
+    -fx-background-radius: 30px;
+    
+
+}
+
+.ResCardButtons{
+
+    -fx-alignment: center;
+    -fx-background-color: #a7ccf0;
+    -fx-text-fill: #0a3153;
+    -fx-background-radius: 30px;
+
+}
+
+.ResCardButtons:hover{
+
+    -fx-cursor: hand;
+    -fx-background-color: #0a3153;
+    -fx-text-fill: #a7ccf0;
+
+}
+
+
+.vboxContainsRes{
+
+
+    -fx-padding: 10px 10px 10px 10px;
+
+}
+
+.resourceExpandedBackgorund{
+
+    -fx-alignment: center;
+    -fx-background-color: #0a3153;
+    -fx-background-radius: 30px;
+    -fx-padding: 10px 10px 10px 10px;
+    
+
+}
+
+.expandedResourceTXT{
+
+    -fx-alignment: center;
+    -fx-text-fill: #a7ccf0;
+    -fx-background-color: #03172b;
+    -fx-background-radius: 30px;
+
+}
+
+.resourceExpandedBTN{
+
+    -fx-alignment: center;
+    -fx-background-color: #a7ccf0;
+    -fx-text-fill: #0a3153;
+    -fx-background-radius: 30px;
+
+
+}
+
+.resourceExpandedBTN:hover{
+
+    -fx-cursor: hand;
+    -fx-background-color: #0a3153;
+    -fx-text-fill: #a7ccf0;
+
+}
+
+.resImgBackgroundPane{
+
+    -fx-alignment: center;
+    -fx-padding: 0px 10px 0px 10px;
+
+}
+
+.requestBoxTxt{
+
+    -fx-alignment: center;
+    -fx-text-fill: #a7ccf0;
+    -fx-background-color: #03172b;
+    -fx-background-radius: 30px;
+
+}
+
+.requestButtons{
+
+    -fx-alignment: center;
+    -fx-background-color: #a7ccf0;
+    -fx-text-fill: #0a3153;
+    -fx-background-radius: 30px;
+
+
+}
+
+.requestButtons:hover{
+
+    -fx-cursor: hand;
+    -fx-background-color: #0a3153;
+    -fx-text-fill: #a7ccf0;
+
+}
+
+.requestBackground{
+
+    -fx-background-color: #54a3e9;
+    -fx-background-radius: 30px;
+    -fx-padding: 10px 10px 10px 10px;
+    -fx-alignment: center;
+
+}
+
+.topleftButtons{
+
+    -fx-alignment: center;
+    -fx-background-color: #0a3153;
+    -fx-text-fill: #a7ccf0;
+    -fx-background-radius: 30px;
+
+}
+
+.topleftButtons:hover{
+
+    -fx-cursor: hand;
+    -fx-background-color: #a7ccf0;
+    -fx-text-fill: #0a3153;
+    
+
+}
+
+.transactionBarPane{
+
+    -fx-background-color: #0a3153;
+    -fx-alignment: center;
+    -fx-background-radius: 30px;
+    -fx-padding: 5px 5px 5px 5px;
+    -fx-border-color:#a7ccf0 ;
+    -fx-border-width: 3px;
+    -fx-border-radius: 30px;
+
+}
+
+.transactionBarTxt{
+
+    -fx-text-fill: #a7ccf0;
+    -fx-alignment: center;
+    
+
+}
+
+.tableHeadersTransactions{
+
+    -fx-background-color:#24527a ;
+    -fx-alignment: center;
+    -fx-text-fill:#a7ccf0 ;
+    -fx-text-alignment: center;
+    -fx-background-radius: 5px;
+    
+
+}
+
+.textfieldsMain{
+
+    -fx-background-color: #082740;
+    -fx-border-color: #ccc;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+    -fx-text-fill:#a7ccf0 ;
+    -fx-font-family: "Madimi One";
+ 
+
+}
+
+.combobox{
+
+    -fx-background-color: #628eaa;
+
+
+}
+
+.submitButtons{
+
+    -fx-background-color:  #AFEEEE;
+    -fx-background-radius: 30px;
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #24527a;
+    -fx-alignment: center;
+
+}
+
+.submitButtons:hover{
+
+
+    -fx-background-color:  #098941;
+    -fx-cursor: hand;
+    -fx-text-fill: #ddede4;   
+
+}
+
+.contactUsBackground{
+    -fx-background-color:#5dacbd;
+}
+
+.contactButton{
+
+    -fx-background-color:  #AFEEEE;
+    -fx-background-radius: 30px;
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #24527a;
+    -fx-alignment: center;
+
+}
+
+.contactButton:hover{
+
+    -fx-background-color:  #098941;
+    -fx-cursor: hand;
+    -fx-text-fill: #ddede4;   
+
+}
+
+.contactUsRightPane{
+
+    -fx-background-color: #24527a;
+    -fx-background-radius: 30px;
+    -fx-padding: 10px;
+
+}
+
+.contactAddress{
+
+    -fx-background-color: #5dacbd;
+    -fx-background-radius: 30px;
+    -fx-padding: 10px;
+    -fx-border-radius: 30px;
+    -fx-border-color: white;
+    -fx-border-width: 3px;
+
+}
+
+.addressTXT{
+
+    -fx-text-fill: #021425;
+    -fx-font-family: "Madimi One";
+
+}
+
+.textAreaContactUs{
+
+
+    -fx-control-inner-background: #082740;
+
+}
+
+.livechatBackground{
+
+    -fx-background-color:  #5dacbd;
+
+}
+
+.scrollpaneLiveChat{
+
+    -fx-background-color: #072f38;
+
+}
+
+.chatcardbackground{
+
+    -fx-background-color: #072f38;
+    -fx-background-radius: 30px;
+    
+}
+
+.chatCardTxt{
+
+    -fx-text-fill: #5dacbd;
+    -fx-text-alignment: center;
+
+}
+
+.ChatCardID{
+
+    -fx-alignment: center;
+    -fx-background-color: #5dacbd;
+    -fx-background-radius: 30px;
+
+}
+
+.liveChatVBox{
+
+    -fx-spacing: 5px;
+}
+
+.messageButton{
+
+    -fx-background-color:  #AFEEEE;
+    -fx-background-radius: 30px;
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #24527a;
+    -fx-alignment: center;
+
+}
+
+.messageButton:hover{
+
+    -fx-background-color:  #098941;
+    -fx-cursor: hand;
+    -fx-text-fill: #ddede4;   
+
+}
+
+
+.userstatusHeaderTop{
+
+
+    -fx-background-color: #24527a;
+    -fx-padding: 10px 10px 10px 10px;
+    -fx-background-radius: 30px;
+    -fx-spacing: 15px;
+
+}
+
+#userStatusRec{
+
+    -fx-background-color: #0c1c29;
+    -fx-text-fill: #819cb2;
+    -fx-background-radius: 30px;
+    -fx-padding: 10;
+
+}
+
+#userStatusstatTXT{
+
+
+    -fx-background-color:#2c506d ;
+    -fx-background-radius: 30px;
+    -fx-padding: 10;
+    -fx-text-fill:#819cb2 ;
+
+}
+
+.InboxLeftPanel{
+
+    -fx-background-color: #143347;
+    -fx-background-radius: 0px 0px 50px 50px;
+
+
+}
+
+.left_inbox_nav_buttons{
+
+    -fx-background-color: #628eaa;
+    -fx-background-radius: 0px 50px 0px 50px;
+    -fx-text-fill: #082e47;
+
+}
+
+.left_inbox_nav_buttons:hover{
+
+    -fx-background-color: #07283c;
+    -fx-border-color: white;
+    -fx-border-width: 3px;
+    -fx-text-fill: #368799;
+    -fx-border-radius: 0px 50px 0px 50px;
+    -fx-cursor: hand;
+
+}
+
+.send_message_buttons{
+
+    -fx-background-radius: 30px;
+    -fx-background-color: #143347;
+    -fx-text-fill: #628eaa;
+
+}
+
+.send_message_buttons:hover{
+
+
+    -fx-background-color:  #628eaa;
+    -fx-cursor: hand;
+    -fx-text-fill: #143347;
+
+
+}
+
+.send_message_labels{
+
+    -fx-font-size: 20px;
+    -fx-font-family: 'Roboto';
+    -fx-font-weight: 700;
+    -fx-text-fill: #24527a;
+
+
+}
+
+.my_inbox_top_nav_label{
+
+    -fx-background-color: #143347;
+    -fx-text-fill: #628eaa;
+    -fx-background-radius: 30px;
+
+}
+
+.my_inbox_top_nav_label:hover{
+
+    -fx-background-color: #628eaa;
+    -fx-text-fill: #143347;
+    -fx-cursor: hand;
+    -fx-border-width: 3px;
+
+}
+
+.nav_container_my_inbox{
+
+    -fx-background-color: #021425;
+    -fx-padding: 10px;
+
+}
+
+.message_preview_container{
+
+
+    -fx-background-color: #6ca0c3;
+    -fx-background-radius: 30px;
+    -fx-padding: 15;
+
+}
+
+.message_preview_titles{
+
+    -fx-font-size: 20px;
+    -fx-font-family: 'Roboto';
+    -fx-font-weight: 700;
+    -fx-text-fill: #07283c;
+    -fx-alignment: center;
+
+}
+
+.message_preview_btns{
+
+    -fx-background-color: #628eaa;
+    -fx-background-radius: 30px;
+    -fx-padding: 10;
+    -fx-text-fill: #07283c;
+
+}
+
+.message_preview_btns:hover{
+    -fx-background-color: #07283c;
+    -fx-cursor: hand;
+    -fx-text-fill: #368799;
+
+}
+
+.message_preview_content{
+
+    -fx-font-size: 12px;
+    -fx-font-family: 'Madimi One';
+    -fx-font-weight: 700;
+    -fx-text-fill: #6ca0c3;
+    -fx-alignment: center;
+    -fx-background-color: #021425;
+    -fx-background-radius: 30px;
+
+}
+
+.MessageContainerBackground{
+
+
+    -fx-background-color: #5dacbd;
+
+}
+
+.conversations_top_panel{
+
+    -fx-background-color: #072f38;
+
+}
+
+.conversations_label{
+
+    -fx-text-fill: #5dacbd;
+    -fx-font-family: "Madimi One";
+    -fx-font-weight: 700;
+
+}
+
+.status_conversations{
+
+    -fx-background-color: #072f38;
+    -fx-background-radius: 50px;
+    -fx-text-fill: #5dacbd;
+}
+
+.bookcardlabels{
+
+    -fx-background-color: #072f38;
+    -fx-background-radius: 50px;
+    -fx-padding: 15;
+    -fx-text-fill: #5dacbd;
+    -fx-font-family: "Madimi One";
+    -fx-border-width: 2px;
+    -fx-border-color: white;
+    -fx-border-radius: 50px;
+
+}
+
+.uploadresourcebuttons{
+
+    -fx-alignment: center;
+    -fx-background-color: #628eaa;
+    -fx-text-fill: #0a3153;
+    -fx-background-radius: 30px;
+
+
+}
+
+.uploadresourcebuttons:hover{
+
+    -fx-cursor: hand;
+    -fx-background-color: #0a3153;
+    -fx-text-fill: #a7ccf0;
+
+}
+
+.user_transactions_heading_labels{
+
+    -fx-text-fill: white;
+    -fx-font-family: "Madimi One";
+    -fx-font-weight: bold;
+
+
+}
+
+.top_up_labels{
+
+    -fx-text-fill: #0a3153;
+    -fx-font-family: "Madimi One";
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+
+}
+
+.top_up_button{
+
+    -fx-background-color: #0a3153;
+    -fx-background-radius: 50px;
+    -fx-text-fill: #a5cfef;
+    -fx-padding: 3px;
+    -fx-alignment: center;
+
+}
+
+.top_up_button:hover{
+
+    -fx-background-color: #021425;
+    -fx-background-radius: 50px;
+    -fx-text-fill: #a5cfef;
+    -fx-cursor: hand;
+
+}
+
+.transactions_table{
+
+    -fx-control-inner-background: #082e47;
+    -fx-table-header-background: #628eaa;
+    -fx-table-header-text-fill: white;
+    -fx-font-family: "Madimi One";
+    -fx-background-color: #628eaa;
+    -fx-text-fill: #082e47;
+
+}
+
+
+.headingtext{
+
+    -fx-text-fill:white;
+    -fx-font-family: "Madimi One";
+    -fx-font-size: 25px;
+
+
+}

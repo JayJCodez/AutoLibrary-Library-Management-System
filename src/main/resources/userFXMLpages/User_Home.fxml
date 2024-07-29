@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Border" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="729.0" prefWidth="1251.0" styleClass="MainBackgroundHome" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userHandlers.User_Home">
+   <children>
+      <BorderPane id="balanceLabelandWelcome" fx:id="borderView" layoutX="256.0" layoutY="107.0" prefHeight="617.0" prefWidth="966.0" stylesheets="@../style.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="256.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="107.0" />
+      <VBox fx:id="LeftMenuBar" layoutX="8.0" layoutY="166.0" prefHeight="553.0" prefWidth="248.0" spacing="10.0" styleClass="LeftMenuBar" stylesheets="@../style.css" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="112.0">
+         <children>
+            <VBox id="WelcomeMessage" alignment="CENTER" prefHeight="113.0" prefWidth="204.0" spacing="10.0" stylesheets="@../style.css">
+               <children>
+                  <ImageView fx:id="user_profile_pic" fitHeight="82.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/LMSLOGO.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="WelcomeMessage" fx:id="NameLabel" alignment="CENTER" prefHeight="40.0" prefWidth="260.0" stylesheets="@../style.css" text="Welcome...........Admin" wrapText="true" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+               </padding>
+            </VBox>
+            <Label fx:id="HomePageButton" alignment="CENTER" onMouseClicked="#btnHomeClicked" prefHeight="68.0" prefWidth="255.0" styleClass="LeftMenuBarButton" stylesheets="@../style.css" text="Home">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="bookeeping_button" alignment="CENTER" onMouseClicked="#btnBookkeeping" prefHeight="70.0" prefWidth="255.0" styleClass="LeftMenuBarButton" stylesheets="@../style.css" text="Bookkeeping">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="digitalresources_button" alignment="CENTER" onMouseClicked="#DigitalResourcesbtn" prefHeight="70.0" prefWidth="255.0" styleClass="LeftMenuBarButton" stylesheets="@../style.css" text="Digital Resources">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="ContactUsBTN" alignment="CENTER" onMouseClicked="#ContactUsBtn" prefHeight="76.0" prefWidth="255.0" styleClass="LeftMenuBarButton" stylesheets="@../style.css" text="Contact Us">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="102.0" prefWidth="1251.0" spacing="60.0" styleClass="TopBarMain" stylesheets="@../style.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="menu_button" fitHeight="72.0" fitWidth="81.0" onMouseClicked="#open_menu">
+               <image>
+                  <Image url="@../Icons/icons8-menu-240.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Logo" fitHeight="78.0" fitWidth="149.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Screenshot%202024-02-12%20at%2014.43.06.png" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="41.0" prefWidth="236.0" spacing="20.0">
+               <children>
+                  <TextField prefHeight="26.0" prefWidth="181.0" promptText="Search" />
+                  <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/loupe.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="36.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/cogwheel.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="settingsBTN" alignment="CENTER" onMouseClicked="#settingsClicked" prefHeight="17.0" prefWidth="57.0" styleClass="TopMenuLabels" stylesheets="@../style.css" text="Settings" />
+               </children>
+            </VBox>
+            <Label fx:id="AddCreditLabel" alignment="CENTER" onMouseClicked="#TopUpPage" prefHeight="38.0" prefWidth="100.0" styleClass="TopMenuLabels" stylesheets="@../style.css" text="ADD CREDIT" />
+            <VBox prefHeight="101.0" prefWidth="91.0" spacing="30.0">
+               <children>
+                  <Label fx:id="BalanceLabel" alignment="CENTER" prefHeight="45.0" prefWidth="141.0" styleClass="balanceAmount" stylesheets="@../style.css" text="Label" />
+                  <Label id="balanceLabel" alignment="CENTER" prefHeight="37.0" prefWidth="91.0" stylesheets="@../style.css" text="Balance" />
+               </children>
+            </VBox>
+            <Label fx:id="signOutBTN" alignment="CENTER" onMouseClicked="#signOut" prefHeight="28.0" prefWidth="72.0" styleClass="user_logoutBTN" stylesheets="@../style.css" text="Logout" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

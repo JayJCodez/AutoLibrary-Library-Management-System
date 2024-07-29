@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="865.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userHandlers.User_Transactions">
+   <children>
+      <ScrollPane fx:id="scrollpane" layoutX="41.0" layoutY="48.0" prefHeight="340.0" prefWidth="784.0" style="-fx-background-color: #a7ccf0;">
+        <content>
+            <GridPane fx:id="grid" prefHeight="57.0" prefWidth="1.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+        </content>
+      </ScrollPane>
+      <HBox layoutX="75.0" layoutY="-26.0" prefHeight="52.0" prefWidth="694.0" styleClass="tableHeadersTransactions" stylesheets="@../style.css">
+         <children>
+            <Label alignment="CENTER" prefHeight="49.0" prefWidth="294.0" styleClass="user_transactions_heading_labels" stylesheets="@../style.css" text="Transaction ID" />
+            <Label prefHeight="49.0" prefWidth="192.0" styleClass="user_transactions_heading_labels" stylesheets="@../style.css" text="Book Name" />
+            <Label prefHeight="49.0" prefWidth="228.0" styleClass="user_transactions_heading_labels" stylesheets="@../style.css" text="Collection Date" />
+            <Label prefHeight="49.0" prefWidth="220.0" styleClass="user_transactions_heading_labels" stylesheets="@../style.css" text="Return Date" />
+            <Label prefHeight="49.0" prefWidth="220.0" styleClass="user_transactions_heading_labels" stylesheets="@../style.css" text="Return Status" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

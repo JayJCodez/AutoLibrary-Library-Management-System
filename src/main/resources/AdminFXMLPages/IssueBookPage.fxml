@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="707.0" styleClass="BookkeepingDisplay" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handlers.IssueBookHandle">
+   <children>
+      <Label alignment="CENTER" layoutX="200.0" layoutY="14.0" prefHeight="49.0" prefWidth="325.0" styleClass="BookkepingHeadingLabels" stylesheets="@../style.css" text="Issue Book" />
+      <VBox alignment="CENTER" layoutX="92.0" layoutY="79.0" spacing="20.0" AnchorPane.leftAnchor="92.0" AnchorPane.rightAnchor="74.0">
+         <children>
+            <Label id="bookkeepingTxtLabel" alignment="CENTER" prefHeight="17.0" prefWidth="157.0" stylesheets="@../style.css" text="Book ID" />
+            <HBox spacing="20.0">
+               <children>
+                  <TextField id="bookkeepingTxtLabel" fx:id="BookIDTxt" prefHeight="26.0" prefWidth="180.0" promptText="Insert Book ID" styleClass="textfieldsMain" stylesheets="@../style.css" />
+                  <Label fx:id="SearchButton" onMouseClicked="#FindBook" prefHeight="26.0" prefWidth="82.0" styleClass="submitButtons" stylesheets="@../style.css" text="Search" />
+                  <Label id="bookkeepingTxtLabel" fx:id="bookNameLbl" prefHeight="26.0" prefWidth="189.0" stylesheets="@../style.css" />
+               </children>
+            </HBox>
+            <Label id="bookkeepingTxtLabel" alignment="CENTER" prefHeight="17.0" prefWidth="157.0" stylesheets="@../style.css" text="Username" />
+            <HBox spacing="20.0">
+               <children>
+                  <TextField id="bookkeepingTxtLabel" fx:id="UsernameTxt" prefHeight="26.0" prefWidth="180.0" promptText="Insert Username" styleClass="textfieldsMain" stylesheets="@../style.css" />
+                  <Label fx:id="searchUserBTN" onMouseClicked="#findUser" prefHeight="26.0" prefWidth="82.0" styleClass="submitButtons" stylesheets="@../style.css" text="Search" />
+                  <Label id="bookkeepingTxtLabel" fx:id="UsernameLabel" prefHeight="26.0" prefWidth="189.0" stylesheets="@../style.css" />
+               </children>
+            </HBox>
+            <Label id="bookkeepingTxtLabel" alignment="CENTER" prefHeight="17.0" prefWidth="157.0" stylesheets="@../style.css" text="Collection Date" />
+            <DatePicker id="bookkeepingTxtLabel" fx:id="CollectionDateBox" prefHeight="26.0" prefWidth="225.0" promptText="When was the book collected ?" stylesheets="@../style.css" />
+            <Label id="bookkeepingTxtLabel" alignment="CENTER" prefHeight="17.0" prefWidth="157.0" stylesheets="@../style.css" text="Return Date" />
+            <DatePicker id="bookkeepingTxtLabel" fx:id="ReturnDateBox" prefHeight="26.0" prefWidth="225.0" promptText="When will the book be returned ?" stylesheets="@../style.css" />
+            <Label id="bookkeepingTxtLabel" fx:id="ErrorLabel" alignment="CENTER" prefHeight="17.0" prefWidth="317.0" stylesheets="@../style.css" />
+         </children>
+      </VBox>
+      <Label fx:id="IssueBookbtn" layoutX="307.0" layoutY="442.0" onMouseClicked="#IssueBook" prefHeight="36.0" prefWidth="112.0" styleClass="submitButtons" stylesheets="@../style.css" text="Issue" AnchorPane.bottomAnchor="14.0" />
+   </children>
+</AnchorPane>

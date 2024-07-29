@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="message_preview_container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="322.0" prefWidth="479.0" styleClass="message_preview_container" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handlers.MessagePreviewHandler">
+   <center>
+      <VBox prefHeight="264.0" prefWidth="481.0" spacing="7.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="date_txt" prefHeight="69.0" prefWidth="459.0" styleClass="message_preview_titles" stylesheets="@../style.css" text="Date">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="from_txt" prefHeight="69.0" prefWidth="459.0" styleClass="message_preview_titles" stylesheets="@../style.css" text="From">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="subject_txt" prefHeight="67.0" prefWidth="459.0" styleClass="message_preview_titles" stylesheets="@../style.css" text="Subject">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="61.0" prefWidth="481.0" styleClass="message_preview_titles" stylesheets="@../style.css" text="Message">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Label>
+            <Label fx:id="message_txt" alignment="CENTER" prefHeight="128.0" prefWidth="481.0" styleClass="message_preview_content" stylesheets="@../style.css" text="&quot;The sun dipped below the horizon, casting a golden hue across the sky. As twilight descended, the city came alive with the soft glow of streetlights and the distant hum of traffic. In the quietude of the evening, a gentle breeze whispered through the trees, carrying with it the scent of freshly cut grass. It was a moment of tranquility, a fleeting pause in the bustling rhythm of urban life.&quot;" wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="15.0" top="20.0" />
+               </VBox.margin></Label>
+            <HBox alignment="CENTER" prefHeight="42.0" prefWidth="481.0" spacing="30.0">
+               <children>
+                  <Label fx:id="view_btn" alignment="CENTER" prefHeight="30.0" prefWidth="184.0" styleClass="message_preview_btns" stylesheets="@../style.css" text="View" />
+                  <Label fx:id="reply_btn" alignment="CENTER" prefHeight="29.0" prefWidth="182.0" styleClass="message_preview_btns" stylesheets="@../style.css" text="Reply" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

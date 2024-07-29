@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="256.0" prefWidth="149.0" styleClass="bookCardBottom" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handlers.BookController">
+   <children>
+      <ImageView fx:id="BookImage" fitHeight="135.0" fitWidth="131.0" layoutX="9.0" layoutY="14.0" pickOnBounds="true" />
+      <VBox layoutY="163.0" prefHeight="93.0" prefWidth="149.0">
+         <children>
+            <Label id="bookLabel" fx:id="BookName" alignment="CENTER" prefHeight="29.0" prefWidth="149.0" stylesheets="@../style.css">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </VBox.margin></Label>
+            <Label id="bookLabel" fx:id="AuthorName" alignment="CENTER" prefHeight="32.0" prefWidth="148.0" stylesheets="@../style.css">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin></Label>
+            <HBox spacing="10.0">
+               <children>
+                  <Label fx:id="viewBTN" alignment="CENTER" prefHeight="37.0" prefWidth="84.0" styleClass="viewBTN" stylesheets="@../style.css" text="View" />
+                  <Label fx:id="saveItem" alignment="CENTER" prefHeight="36.0" prefWidth="71.0" styleClass="viewBTN" stylesheets="@../style.css" text="Save" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="1055.0" styleClass="BookKeepingMain" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handlers.BookkeepingHandler">
+   <children>
+      <VBox layoutX="21.0" layoutY="127.0" prefHeight="308.0" prefWidth="223.0" spacing="15.0" AnchorPane.bottomAnchor="113.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="113.0">
+         <children>
+            <Label fx:id="NewBookButton" alignment="CENTER" onMouseClicked="#clickNewBook" prefHeight="49.0" prefWidth="225.0" styleClass="BookeepingLeftMenuLabels" stylesheets="@../style.css" text="New Book" />
+            <Label fx:id="ReturnBookButton" alignment="CENTER" onMouseClicked="#ReturnBookButton" prefHeight="49.0" prefWidth="225.0" styleClass="BookeepingLeftMenuLabels" stylesheets="@../style.css" text="Return Book" />
+            <Label fx:id="IssueBookButton" alignment="CENTER" onMouseClicked="#IssueBookbtn" prefHeight="49.0" prefWidth="225.0" styleClass="BookeepingLeftMenuLabels" stylesheets="@../style.css" text="Issue Book" />
+            <Label fx:id="ViewBooksButton" alignment="CENTER" onMouseClicked="#ViewBookbtn" prefHeight="49.0" prefWidth="225.0" styleClass="BookeepingLeftMenuLabels" stylesheets="@../style.css" text="View Books" />
+            <Label fx:id="VerifyReturnButton" alignment="CENTER" onMouseClicked="#VerifyReturnbtn" prefHeight="49.0" prefWidth="225.0" styleClass="BookeepingLeftMenuLabels" stylesheets="@../style.css" text="Verify Return" />
+         </children>
+      </VBox>
+      <BorderPane fx:id="LibraryView" layoutX="238.0" layoutY="18.0" prefHeight="529.0" prefWidth="849.0" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="238.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="18.0" />
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</AnchorPane>

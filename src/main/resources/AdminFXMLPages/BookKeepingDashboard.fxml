@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="605.0" styleClass="BookkeepingDisplay" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handlers.BookKeepingDashboardHandler">
+   <children>
+      <Label alignment="CENTER" prefHeight="77.0" prefWidth="668.0" styleClass="BookkepingHeadingLabels" stylesheets="@../style.css" text="Bookkeeping Dashboard" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="27.0" layoutY="177.0" prefWidth="300.0" styleClass="BookkeepingSectionDescription" stylesheets="@../style.css" text="This section aims to handle all book related queries and checks. " wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="10.0" right="15.0" />
+   </padding>
+</AnchorPane>

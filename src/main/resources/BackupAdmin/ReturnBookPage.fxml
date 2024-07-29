@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="657.0" styleClass="BookkeepingDisplay" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handlers.ReturnBookHandler">
+   <children>
+      <Label alignment="CENTER" layoutX="158.0" layoutY="21.0" prefHeight="26.0" prefWidth="329.0" styleClass="BookkepingHeadingLabels" stylesheets="@../style.css" text="Return Book" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="170.0" AnchorPane.topAnchor="5.0" />
+      <VBox alignment="CENTER" layoutX="46.0" layoutY="68.0" spacing="15.0">
+         <children>
+            <Label id="bookkeepingTxtLabel" alignment="CENTER" prefHeight="17.0" prefWidth="137.0" stylesheets="@../style.css" text="Username" />
+            <TextField id="bookkeepingTxtLabel" fx:id="UsernameTxt" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="243.0" promptText="Insert Username" styleClass="textfieldsMain" stylesheets="@../style.css" />
+            <Label id="bookkeepingTxtLabel" alignment="CENTER" prefHeight="17.0" prefWidth="131.0" stylesheets="@../style.css" text="Book ID" />
+            <HBox spacing="20.0">
+               <children>
+                  <TextField id="bookkeepingTxtLabel" fx:id="BookIDTxt" prefHeight="26.0" prefWidth="243.0" promptText="Insert Book ID" styleClass="textfieldsMain" stylesheets="@../style.css" />
+                  <Label fx:id="SearchBtn" onMouseClicked="#FindBook" prefHeight="26.0" prefWidth="105.0" styleClass="submitButtons" stylesheets="@../style.css" text="Search" />
+                  <Label id="bookkeepingTxtLabel" fx:id="BookNameDisplay" prefHeight="26.0" prefWidth="177.0" stylesheets="@../style.css" wrapText="true" />
+               </children>
+            </HBox>
+            <Label id="bookkeepingTxtLabel" alignment="CENTER" prefHeight="17.0" prefWidth="105.0" stylesheets="@../style.css" text="Borrowed on:" />
+            <Label id="bookkeepingTxtLabel" fx:id="CollectionDateBox" alignment="CENTER" prefHeight="17.0" prefWidth="243.0" stylesheets="@../style.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label id="bookkeepingTxtLabel" alignment="CENTER" prefHeight="17.0" prefWidth="105.0" stylesheets="@../style.css" text="Return Date:" />
+            <Label id="bookkeepingTxtLabel" fx:id="ReturnDateBox" alignment="CENTER" prefHeight="17.0" prefWidth="243.0" stylesheets="@../style.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label id="bookkeepingTxtLabel" fx:id="ErrorLabel" alignment="CENTER" prefHeight="17.0" prefWidth="243.0" stylesheets="@../style.css" />
+            <Label fx:id="ReturnBookbtn" onMouseClicked="#ReturnBook" prefHeight="42.0" prefWidth="137.0" styleClass="submitButtons" stylesheets="@../style.css" text="Return Book" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

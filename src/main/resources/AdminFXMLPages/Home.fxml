@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1051.0" styleClass="MainBackgroundHome" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handlers.AdminHomeHandle">
+   <children>
+      <VBox fx:id="LeftMenuBar" layoutX="14.0" layoutY="98.0" prefHeight="492.0" prefWidth="252.0" spacing="10.0" styleClass="LeftMenuBar" stylesheets="@../style.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="98.0">
+         <children>
+            <VBox id="WelcomeMessage" alignment="CENTER" prefHeight="164.0" prefWidth="233.0" spacing="10.0" stylesheets="@../style.css">
+               <children>
+                  <ImageView fx:id="profile_pic" fitHeight="125.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/icons8-avatar-96.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="WelcomeMessage" fx:id="adminNameLabel" alignment="CENTER_RIGHT" prefHeight="46.0" prefWidth="184.0" stylesheets="@../style.css" text="Welcome...........Admin" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+            <Label fx:id="HomePageButton" alignment="CENTER" onMouseClicked="#btnHomeClicked" prefHeight="67.0" prefWidth="254.0" styleClass="LeftMenuBarButton" stylesheets="@../style.css" text="Home">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="bookkeepingbtn" alignment="CENTER" onMouseClicked="#btnBookkeeping" prefHeight="67.0" prefWidth="254.0" styleClass="LeftMenuBarButton" stylesheets="@../style.css" text="Bookkeeping">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="digital_res_btn" alignment="CENTER" onMouseClicked="#DigitalResourcesbtn" prefHeight="67.0" prefWidth="254.0" styleClass="LeftMenuBarButton" stylesheets="@../style.css" text="Digital Resources">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="requestPage" alignment="CENTER" onMouseClicked="#requestPage" prefHeight="67.0" prefWidth="254.0" styleClass="LeftMenuBarButton" stylesheets="@../style.css" text="Requests">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="InboxBTN" alignment="CENTER" onMouseClicked="#InboxBtn" prefHeight="67.0" prefWidth="254.0" styleClass="LeftMenuBarButton" stylesheets="@../style.css" text="Inbox">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <BorderPane fx:id="borderView" layoutX="278.0" layoutY="81.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="508.0" prefWidth="702.0" stylesheets="@../style.css" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="278.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="81.0" />
+      <AnchorPane fx:id="TopMenuBar" prefHeight="85.0" prefWidth="1203.0" styleClass="TopBarMain" stylesheets="@../style.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="Logo" fitHeight="59.0" fitWidth="149.0" layoutX="233.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="19.113948822021484" AnchorPane.leftAnchor="233.0" AnchorPane.topAnchor="17.0">
+               <image>
+                  <Image url="@../Images/Screenshot%202024-02-12%20at%2014.43.06.png" />
+               </image>
+            </ImageView>
+            <HBox layoutX="308.0" layoutY="24.0" spacing="15.0" AnchorPane.leftAnchor="427.0" AnchorPane.rightAnchor="386.0">
+               <children>
+                  <TextField fx:id="searchbar" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="189.0" promptText="Search" />
+                  <ImageView fitHeight="37.0" fitWidth="34.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/loupe.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" layoutX="702.0" layoutY="13.0" prefHeight="62.0" prefWidth="47.0" spacing="10.0" AnchorPane.rightAnchor="183.0">
+               <children>
+                  <ImageView fitHeight="36.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/cogwheel.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="settingsButton" onMouseClicked="#settingsClicked" prefHeight="30.0" prefWidth="64.0" styleClass="TopMenuLabels" stylesheets="@../style.css" text="Settings" />
+               </children>
+            </VBox>
+            <Label fx:id="signoutButton" alignment="CENTER" layoutX="824.0" layoutY="32.0" onMouseClicked="#signout" prefHeight="24.0" prefWidth="68.0" styleClass="user_logoutBTN" stylesheets="@../style.css" text="Sign Out" AnchorPane.bottomAnchor="29.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="32.0" />
+            <ImageView fx:id="menu_button" fitHeight="72.0" fitWidth="81.0" layoutX="97.0" layoutY="5.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="97.0" AnchorPane.topAnchor="5.0">
+               <image>
+                  <Image url="@../Icons/icons8-menu-240.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="menu_button_close" fitHeight="72.0" fitWidth="81.0" layoutX="97.0" layoutY="5.0" rotate="90.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="97.0" AnchorPane.topAnchor="5.0">
+               <image>
+                  <Image url="@../Icons/icons8-menu-240.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

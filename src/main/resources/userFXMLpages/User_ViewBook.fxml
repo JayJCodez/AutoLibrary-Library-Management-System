@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="865.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userHandlers.User_ViewBook">
+   <children>
+      <TableView fx:id="BookTable" layoutX="14.0" layoutY="291.0" prefHeight="231.0" prefWidth="845.0">
+        <columns>
+          <TableColumn fx:id="Book_Name" prefWidth="268.0" text="Book Name" />
+          <TableColumn fx:id="Publisher_Name" prefWidth="245.0" text="Publisher" />
+            <TableColumn fx:id="Book_Cover" prefWidth="312.0" text="Actions" />
+        </columns>
+      </TableView>
+      <BorderPane fx:id="imageView" layoutX="248.0" layoutY="12.0" prefHeight="259.0" prefWidth="350.0" />
+   </children>
+</AnchorPane>

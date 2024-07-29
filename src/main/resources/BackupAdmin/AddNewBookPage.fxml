@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="NewBookView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="657.0" styleClass="BookkeepingDisplay" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handlers.NewBookHandler">
+   <children>
+      <Label alignment="CENTER" layoutX="218.0" layoutY="14.0" prefHeight="51.0" prefWidth="222.0" styleClass="BookkepingHeadingLabels" stylesheets="@../style.css" text="New Book" AnchorPane.leftAnchor="218.0" AnchorPane.topAnchor="14.0" />
+      <VBox alignment="CENTER" layoutX="22.0" layoutY="84.0" prefHeight="269.0" prefWidth="263.0" spacing="20.0" AnchorPane.bottomAnchor="97.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="372.0" AnchorPane.topAnchor="84.0">
+         <children>
+            <Label id="bookkeepingTxtLabel" alignment="CENTER" prefHeight="17.0" prefWidth="246.0" stylesheets="@../style.css" text="Book Name" />
+            <TextField id="bookkeepingTxtLabel" fx:id="BookNameTxt" prefHeight="26.0" prefWidth="263.0" promptText="Insert Book Name" styleClass="textfieldsMain" stylesheets="@../style.css" />
+            <Label id="bookkeepingTxtLabel" alignment="CENTER" prefHeight="17.0" prefWidth="246.0" stylesheets="@../style.css" text="Publisher" />
+            <TextField id="bookkeepingTxtLabel" fx:id="PublisherTxt" prefHeight="26.0" prefWidth="263.0" promptText="Insert Publisher Name" styleClass="textfieldsMain" stylesheets="@../style.css" />
+            <Label id="bookkeepingTxtLabel" alignment="CENTER" prefHeight="17.0" prefWidth="263.0" stylesheets="@../style.css" text="Price" />
+            <TextField id="bookkeepingTxtLabel" fx:id="PriceTxt" prefHeight="26.0" prefWidth="263.0" promptText="Insert numerical price value" styleClass="textfieldsMain" stylesheets="@../style.css" />
+         </children>
+      </VBox>
+      <Label id="bookkeepingTxtLabel" fx:id="ErrorMessage" alignment="CENTER" layoutX="156.0" layoutY="364.0" prefHeight="17.0" prefWidth="346.0" stylesheets="@../style.css" />
+      <VBox alignment="CENTER" layoutX="389.0" layoutY="164.0" spacing="20.0" AnchorPane.bottomAnchor="177.0" AnchorPane.leftAnchor="389.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="164.0">
+         <children>
+            <Label id="bookkeepingTxtLabel" alignment="CENTER" prefHeight="17.0" prefWidth="246.0" stylesheets="@../style.css" text="Book Cover Source Path" />
+            <TextField fx:id="bookCoverSrc" prefHeight="26.0" prefWidth="216.0" styleClass="textfieldsMain" />
+            <Label fx:id="chooseFileBtn" onMouseClicked="#chooseFile" prefHeight="26.0" prefWidth="105.0" styleClass="chooseFileBTN" stylesheets="@../style.css" text="Choose File" />
+         </children>
+      </VBox>
+      <Label fx:id="AddNewBookTDB" layoutX="264.0" layoutY="393.0" onMouseClicked="#AddNewBookTDB" prefHeight="37.0" prefWidth="130.0" styleClass="submitButtons" stylesheets="@../style.css" text="ADD" AnchorPane.leftAnchor="264.0" AnchorPane.rightAnchor="263.0" />
+   </children>
+</AnchorPane>

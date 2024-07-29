@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="941.0" styleClass="MainBackgroundHome" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handlers.MessageSectionHandler">
+   <left>
+      <VBox alignment="CENTER" prefHeight="599.0" prefWidth="204.0" stylesheets="@../style.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="338.0" prefWidth="204.0" spacing="10.0" stylesheets="@../style.css">
+               <children>
+                  <Label fx:id="new_messagesbtn" alignment="CENTER" onMouseClicked="#nav_new_message" prefHeight="46.0" prefWidth="267.0" styleClass="left_inbox_nav_buttons" stylesheets="@../style.css" text="New Message" />
+                  <Label fx:id="inbox_btn" alignment="CENTER" onMouseClicked="#inbox_section" prefHeight="42.0" prefWidth="249.0" styleClass="left_inbox_nav_buttons" stylesheets="@../style.css" text="Inbox" />
+                  <Label fx:id="archive_btn" alignment="CENTER" onMouseClicked="#archive_section" prefHeight="41.0" prefWidth="247.0" styleClass="left_inbox_nav_buttons" stylesheets="@../style.css" text="Archive" />
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets right="20.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <center>
+      <BorderPane fx:id="MessagingSectionPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

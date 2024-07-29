@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="403.0" prefWidth="272.0" styleClass="requestBackground" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handlers.RequestBoxHandler">
+   <children>
+      <VBox layoutY="188.0" prefHeight="215.0" prefWidth="272.0" spacing="10.0">
+         <children>
+            <Label fx:id="resourcename" prefHeight="41.0" prefWidth="262.0" styleClass="requestBoxTxt" stylesheets="@../style.css" text="resourcename" />
+            <Label fx:id="username" prefHeight="45.0" prefWidth="261.0" styleClass="requestBoxTxt" stylesheets="@../style.css" text="username" />
+            <Label fx:id="requesttime" prefHeight="47.0" prefWidth="261.0" styleClass="requestBoxTxt" stylesheets="@../style.css" text="requesttime" />
+            <HBox prefHeight="59.0" prefWidth="256.0" spacing="10.0">
+               <children>
+                  <Label fx:id="approvebtn" prefHeight="55.0" prefWidth="134.0" styleClass="requestButtons" stylesheets="@../style.css" text="Approve" />
+                  <Label fx:id="denybtn" prefHeight="55.0" prefWidth="121.0" styleClass="requestButtons" stylesheets="@../style.css" text="Deny" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <BorderPane fx:id="border" layoutX="-1.0" prefHeight="183.0" prefWidth="272.0">
+         <center>
+            <ImageView fx:id="img" fitHeight="173.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

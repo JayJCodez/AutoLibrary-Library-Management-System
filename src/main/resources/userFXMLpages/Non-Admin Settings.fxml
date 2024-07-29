@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="1018.0" styleClass="MainBackgroundHome" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userHandlers.UserSettings">
+   <children>
+      <Label layoutX="406.0" layoutY="26.0" prefHeight="65.0" prefWidth="206.0" styleClass="HomeDashboardLabel" stylesheets="@../style.css" text="Settings" AnchorPane.leftAnchor="406.0" AnchorPane.rightAnchor="406.0" AnchorPane.topAnchor="26.0" />
+      <HBox alignment="CENTER" layoutX="15.0" layoutY="115.0" spacing="20.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="115.0">
+         <children>
+            <Label fx:id="personalDetailsButton" onMouseClicked="#personaldetailsClicked" prefHeight="31.0" prefWidth="232.0" styleClass="AdminsetttingsTopMenu" stylesheets="@../style.css" text="Personal Details" />
+            <Label prefHeight="31.0" prefWidth="232.0" styleClass="AdminsetttingsTopMenu" stylesheets="@../style.css" text="Account Preferences" />
+         </children>
+      </HBox>
+      <BorderPane fx:id="view" layoutX="28.0" layoutY="185.0" prefHeight="417.0" prefWidth="966.0" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="185.0" />
+   </children>
+</AnchorPane>

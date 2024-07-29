@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="644.0" styleClass="transactionBarPane" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userHandlers.TransactionBar">
+   <children>
+      <HBox prefHeight="50.0" prefWidth="644.0">
+         <children>
+            <Label fx:id="transactionID" prefHeight="52.0" prefWidth="187.0" styleClass="transactionBarTxt" stylesheets="@../style.css" text="TransactionID" />
+            <Label fx:id="bookName" prefHeight="52.0" prefWidth="187.0" styleClass="transactionBarTxt" stylesheets="@../style.css" text="Book Name" />
+            <Label fx:id="collectionDate" prefHeight="50.0" prefWidth="214.0" styleClass="transactionBarTxt" stylesheets="@../style.css" text="Collection Date" />
+            <Label fx:id="returnDate" prefHeight="50.0" prefWidth="198.0" styleClass="transactionBarTxt" stylesheets="@../style.css" text="Return Date" />
+            <Label fx:id="return_status" prefHeight="50.0" prefWidth="198.0" styleClass="transactionBarTxt" stylesheets="@../style.css" text="Returned" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

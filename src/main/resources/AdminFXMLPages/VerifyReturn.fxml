@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="657.0" styleClass="BookkeepingDisplay" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handlers.VerifyReturnHandle">
+   <children>
+      <Label alignment="CENTER" layoutX="221.0" layoutY="20.0" prefHeight="61.0" prefWidth="216.0" styleClass="BookkepingHeadingLabels" stylesheets="@../style.css" text="Verify Return" AnchorPane.leftAnchor="221.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="20.0" />
+      <VBox alignment="CENTER" layoutX="182.0" layoutY="108.0" spacing="20.0" AnchorPane.leftAnchor="182.0" AnchorPane.rightAnchor="182.0">
+         <children>
+            <Label id="bookkeepingTxtLabel" alignment="CENTER" prefHeight="17.0" prefWidth="99.0" styleClass="BookkeepingDisplay" stylesheets="@../style.css" text="Book ID">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField id="bookkeepingTxtLabel" fx:id="BookIDTxt" prefHeight="26.0" prefWidth="216.0" promptText="Insert Book ID" styleClass="textfieldsMain" stylesheets="@../style.css" />
+            <Label id="bookkeepingTxtLabel" alignment="CENTER" prefHeight="17.0" prefWidth="78.0" styleClass="BookkeepingDisplay" stylesheets="@../style.css" text="Username" />
+            <TextField id="bookkeepingTxtLabel" fx:id="UsernameTxt" prefHeight="26.0" prefWidth="216.0" promptText="Insert Username" styleClass="textfieldsMain" stylesheets="@../style.css" />
+            <Label id="bookkeepingTxtLabel" fx:id="ErrorLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="112.0" prefWidth="293.0" stylesheets="@../style.css" wrapText="true" />
+            <Label fx:id="Searchbtn" onMouseClicked="#VerifyReturn" prefHeight="26.0" prefWidth="99.0" styleClass="submitButtons" stylesheets="@../style.css" text="Search" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

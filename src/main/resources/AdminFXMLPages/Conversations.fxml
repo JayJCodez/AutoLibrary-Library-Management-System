@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="744.0" styleClass="MessageContainerBackground" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handlers.ConversationHandler">
+   <center>
+      <ScrollPane fx:id="scrollpane" fitToHeight="true" fitToWidth="true" BorderPane.alignment="CENTER">
+         <content>
+            <VBox fx:id="conversation_container" alignment="TOP_CENTER" prefHeight="382.0" prefWidth="725.0" spacing="15.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="66.0" prefWidth="732.0" spacing="15.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="message_textfield" prefHeight="25.0" prefWidth="251.0" promptText="Enter a message" />
+            <ImageView fx:id="attachments" fitHeight="50.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icons/icons8-inbox-64.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="send_message" alignment="CENTER" onMouseClicked="#send_reply" prefHeight="41.0" prefWidth="113.0" styleClass="my_inbox_top_nav_label" stylesheets="@../style.css" text="Send Reply" />
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <VBox alignment="CENTER" spacing="15.0" style="-fx-background-color: white;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="732.0" styleClass="conversations_top_panel" stylesheets="@../style.css">
+               <children>
+                  <Label alignment="CENTER" prefHeight="40.0" prefWidth="146.0" styleClass="conversations_label" stylesheets="@../style.css" text="Conversations" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="34.0" prefWidth="166.0" spacing="10.0" styleClass="status_conversations" stylesheets="@../style.css">
+               <children>
+                  <Label fx:id="status_label" alignment="CENTER" prefHeight="34.0" prefWidth="90.0" styleClass="conversations_label" stylesheets="@../style.css" text="Offline" />
+                  <ImageView fx:id="status_img" fitHeight="20.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/icons8-red-dot-48.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </VBox>
+   </top>
+</BorderPane>

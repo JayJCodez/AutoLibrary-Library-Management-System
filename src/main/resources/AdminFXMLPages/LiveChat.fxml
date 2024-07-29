@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="717.0" prefWidth="968.0" styleClass="livechatBackground" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handlers.LiveChatHandler">
+   <children>
+      <Label fx:id="livechatlabel" alignment="CENTER" layoutX="422.0" layoutY="33.0" prefHeight="55.0" prefWidth="294.0" text="Live Chat" AnchorPane.leftAnchor="422.0" AnchorPane.rightAnchor="252.0" AnchorPane.topAnchor="33.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="messageTXT" layoutX="422.0" layoutY="526.0" prefHeight="26.0" prefWidth="506.0" />
+      <Button fx:id="sendButton" layoutX="761.0" layoutY="562.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="26.0" prefWidth="167.0" text="Send" />
+      <ScrollPane fx:id="scroll" layoutX="422.0" layoutY="152.0">
+         <content>
+            <VBox fx:id="vbox" prefHeight="364.0" prefWidth="504.0" styleClass="scrollpaneLiveChat" stylesheets="@../style.css" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="printlist" layoutX="845.0" layoutY="69.0" mnemonicParsing="false" onAction="#print" prefHeight="29.0" prefWidth="81.0" text="PRINT LIST" AnchorPane.leftAnchor="845.0" AnchorPane.rightAnchor="42.0" />
+      <ScrollPane layoutX="14.0" layoutY="104.0" prefHeight="417.0" prefWidth="347.0" AnchorPane.bottomAnchor="196.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="104.0">
+         <content>
+            <VBox fx:id="userListBox" prefHeight="412.0" prefWidth="308.0" styleClass="liveChatVBox" stylesheets="@../style.css">
+               <children>
+                  <GridPane fx:id="grid" prefHeight="32.0" prefWidth="8.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Label layoutX="14.0" layoutY="56.0" prefHeight="37.0" prefWidth="328.0" text="Users" AnchorPane.leftAnchor="14.0" />
+      <VBox fx:id="vboxstatus" layoutX="418.0" layoutY="14.0" prefHeight="55.0" prefWidth="303.0" styleClass="userstatusHeaderTop" stylesheets="@../style.css" AnchorPane.leftAnchor="418.0" AnchorPane.rightAnchor="247.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <Label id="userStatusRec" fx:id="recipient" prefHeight="42.0" prefWidth="303.0" stylesheets="@../style.css" text="recipient " />
+            <Label id="userStatusstatTXT" fx:id="status" prefHeight="39.0" prefWidth="251.0" stylesheets="@../style.css" text="Status" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
